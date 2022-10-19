@@ -3,7 +3,7 @@
 [345, 897, 568, 234] -> 2 */
 
 
-int[] array = GetArray(10, 100, 1000); // массив из 3х значных чисел рандомных
+/*int[] array = GetArray(10, 100, 1000); // массив из 3х значных чисел рандомных
 Console.WriteLine($"Полученный массив: {String.Join(", ", array)}");
 Console.WriteLine($"Количество четных чиссел в массиве: {numEvenPosition(array)}");
 
@@ -28,4 +28,41 @@ int[] GetArray(int size, int minValue, int maxValue){ //метод вывода 
         res[i] = new Random().Next(minValue, maxValue + 1);
     }
     return res;
+} */
+
+/* Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, 
+стоящих на нечётных позициях.
+[3, 7, 23, 12] -> 19
+[-4, -6, 89, 6] -> 0 */
+
+/*int[] array = GetArray(4);
+Console.WriteLine($"Полученный массив: {String.Join(", ", array)}");
+Console.WriteLine($"Количество  не четных чиссел в массиве: {numEvenPosition(array)}");
+
+int numEvenPosition(int[] array){ 
+    int numEven = 0;
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] % 2 != 0)
+        {
+        numEven ++;
+        }
+    }
+    return numEven;
 }
+
+int[] GetArray(int size){ //метод вывода рандомного массива без ручных ограничений
+    int[] res = new int[size];
+
+    for(int i = 0; i < size; i++)
+    {
+        res[i] = new Random().Next();
+    }
+    return res;
+} */
+
+
+/*Задайте массив вещественных чисел(просто от минус бесконечности, до плюс бесконечности, 
+с дробными не работаем). Найдите разницу между максимальным и минимальным элементов массива.
+[3 7 22 2 78] -> 76 */
+
